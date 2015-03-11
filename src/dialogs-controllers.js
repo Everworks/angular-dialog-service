@@ -108,7 +108,11 @@ ctrlrs.controller('confirmDialogCtrl',['$scope','$modalInstance','$translate','d
 	
 	$scope.no = function(){
 		$modalInstance.dismiss('no');
-	}; // end close
+	}; // end no
+
+  $scope.close = function(){
+    $modalInstance.dismiss('close');
+  }; // end close
 	
 	$scope.yes = function(){
 		$modalInstance.close('yes');
